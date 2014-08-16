@@ -705,9 +705,10 @@
             "source": {
                 "type": "git",
                 "url": "ssh://gitlab.mittwaldserver.info/mhelmich/flow-package-metamorph.git",
-                "reference": "9125b64ddd16e5d4c41fa687eca119a0b9d5cc21"
+                "reference": "99f8790edb7cc0a2e5b9ac91ca3fc83f1f7eb191"
             },
             "require": {
+                "nikic/php-parser": "1.0.*@dev",
                 "typo3/flow": "*"
             },
             "type": "typo3-flow-package",
@@ -717,7 +718,52 @@
                 }
             },
             "description": "Add description here",
-            "time": "2014-08-16 09:45:06"
+            "time": "2014-08-16 13:14:11"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v1.0.0beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "a6d46c17b10d89f35a92fa4b8fb5071615bfb36c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a6d46c17b10d89f35a92fa4b8fb5071615bfb36c",
+                "reference": "a6d46c17b10d89f35a92fa4b8fb5071615bfb36c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2014-03-27 13:12:13"
         },
         {
             "name": "symfony/console",
