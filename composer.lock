@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c1b0f2a7bf8549909e96d2c4a1137bfb",
+    "hash": "644fcb5937a2ea6dbf8a9e6c1163abdb",
     "packages": [
         {
             "name": "composer/installers",
@@ -98,16 +98,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd"
+                "reference": "6a6bec0670bb6e71a263b08bc1b98ea242928633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
-                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/6a6bec0670bb6e71a263b08bc1b98ea242928633",
+                "reference": "6a6bec0670bb6e71a263b08bc1b98ea242928633",
                 "shasum": ""
             },
             "require": {
@@ -135,17 +135,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -154,10 +143,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Docblock Annotations Parser",
@@ -167,7 +162,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-07-06 15:52:21"
+            "time": "2014-09-25 16:45:30"
         },
         {
             "name": "doctrine/cache",
@@ -696,10 +691,11 @@
             "source": {
                 "type": "git",
                 "url": "ssh://gitlab.mittwaldserver.info/mhelmich/flow-package-metamorph.git",
-                "reference": "071aaaae0bd51599e2b0c75606832a9def95f45f"
+                "reference": "84466bc0a1dbe41db66d3f99d5b775464e59c855"
             },
             "require": {
                 "nikic/php-parser": "dev-master",
+                "symfony/console": "*",
                 "typo3/flow": "*"
             },
             "type": "typo3-flow-package",
@@ -709,7 +705,7 @@
                 }
             },
             "description": "Add description here",
-            "time": "2014-08-18 19:47:20"
+            "time": "2014-09-27 12:57:00"
         },
         {
             "name": "nikic/php-parser",
@@ -813,17 +809,17 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v2.2.11",
+            "version": "v2.5.4",
             "target-dir": "Symfony/Component/DomCrawler",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "64d6ffc84d8c9dd7673539f9e3c6c9b5521a497e"
+                "reference": "27499e5951ef3d5731efe4db7481f26a68d75258"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/64d6ffc84d8c9dd7673539f9e3c6c9b5521a497e",
-                "reference": "64d6ffc84d8c9dd7673539f9e3c6c9b5521a497e",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/27499e5951ef3d5731efe4db7481f26a68d75258",
+                "reference": "27499e5951ef3d5731efe4db7481f26a68d75258",
                 "shasum": ""
             },
             "require": {
@@ -833,12 +829,12 @@
                 "symfony/css-selector": "~2.0"
             },
             "suggest": {
-                "symfony/css-selector": "2.2.*"
+                "symfony/css-selector": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -852,42 +848,45 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2013-11-29 05:58:12"
+            "time": "2014-08-26 14:16:33"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.1.13",
+            "version": "v2.5.4",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "347a7a02204433c6926ecc3f13e805bdc30e8f9f"
+                "reference": "01a7695bcfb013d0a15c6757e15aae120342986f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/347a7a02204433c6926ecc3f13e805bdc30e8f9f",
-                "reference": "347a7a02204433c6926ecc3f13e805bdc30e8f9f",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/01a7695bcfb013d0a15c6757e15aae120342986f",
+                "reference": "01a7695bcfb013d0a15c6757e15aae120342986f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
-                    "Symfony\\Component\\Yaml": ""
+                    "Symfony\\Component\\Yaml\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -896,51 +895,45 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-10 00:09:46"
+            "time": "2014-08-31 03:22:04"
         },
         {
             "name": "typo3/eel",
-            "version": "2.2.2",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Eel.git",
-                "reference": "5bc1416a69eb8468b243843374adc8023332b139"
+                "reference": "25710c956524fc6d7f28d5748973100960980ab9"
             },
             "require": {
-                "typo3/flow": "2.2.*"
+                "typo3/flow": "*"
             },
-            "type": "typo3-flow-framework",
+            "type": "typo3-flow-package",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Eel": "Classes"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "description": "The Embedded Expression Language (Eel) is a building block for creating Domain Specific Languages",
-            "time": "2014-08-15 14:36:35"
+            "time": "2013-08-06 14:53:48"
         },
         {
             "name": "typo3/flow",
-            "version": "2.2.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Flow.git",
-                "reference": "e33836bd35d4c6026d1ec6d9a27681731458dd79"
+                "reference": "f8121dde9b7cbda4975695ef7093cc01ce0cdafb"
             },
             "require": {
                 "composer/installers": "~1.0.2",
@@ -951,11 +944,12 @@
                 "ext-spl": "*",
                 "ext-zlib": "*",
                 "php": ">=5.3.2",
-                "symfony/dom-crawler": "2.2.*",
-                "symfony/yaml": "2.1.*",
-                "typo3/eel": "2.2.*",
-                "typo3/fluid": "2.2.*",
-                "typo3/party": "2.2.*"
+                "symfony/console": "2.*",
+                "symfony/dom-crawler": "2.5.*",
+                "symfony/yaml": "2.5.*",
+                "typo3/eel": "*",
+                "typo3/fluid": "*",
+                "typo3/party": "*"
             },
             "suggest": {
                 "doctrine/data-fixtures": "To manage and execute the loading of data fixtures for the Doctrine ORM or ODM"
@@ -972,18 +966,18 @@
             ],
             "description": "TYPO3 Flow Application Framework",
             "homepage": "http://flow.typo3.org",
-            "time": "2014-09-02 11:47:08"
+            "time": "2014-09-18 10:27:12"
         },
         {
             "name": "typo3/fluid",
-            "version": "2.2.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Fluid.git",
-                "reference": "4c117986434c8ad0c0912bd2a47db96e7c8ef848"
+                "reference": "5aed6237afd5f60f2989c6bd905ed937ebcd3366"
             },
             "require": {
-                "typo3/flow": "2.2.*"
+                "typo3/flow": "*"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -996,18 +990,18 @@
                 "LGPL-3.0+"
             ],
             "description": "Next-Generation Templating Framework for TYPO3 Flow and TYPO3 Neos, also backported to TYPO3 CMS",
-            "time": "2014-08-28 07:54:10"
+            "time": "2014-09-14 16:33:32"
         },
         {
             "name": "typo3/party",
-            "version": "2.2.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Party.git",
-                "reference": "0cce5c05e7d0675d76ec3742da192fefbc320d32"
+                "reference": "9cd749deaa0bc6e2bc18a210bb269dd633522327"
             },
             "require": {
-                "typo3/flow": "2.2.*"
+                "typo3/flow": "*"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1020,7 +1014,7 @@
                 "LGPL-3.0+"
             ],
             "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard.",
-            "time": "2014-06-18 10:15:35"
+            "time": "2014-03-27 00:29:08"
         }
     ],
     "packages-dev": [
@@ -1813,11 +1807,11 @@
         },
         {
             "name": "typo3/buildessentials",
-            "version": "2.2.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Flow/BuildEssentials.git",
-                "reference": "a07984ca9afb3368e030edaa66053991b0f33b81"
+                "reference": "1b1b8df690260a364f449ef998b4b27405e2ff2e"
             },
             "require": {
                 "composer/installers": "~1.0.2"
@@ -1831,18 +1825,18 @@
                 "LGPL-3.0+"
             ],
             "description": "TYPO3 Flow Build Toolchain Essentials",
-            "time": "2014-03-25 15:50:47"
+            "time": "2014-03-25 15:51:53"
         },
         {
             "name": "typo3/kickstart",
-            "version": "2.2.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Kickstart.git",
-                "reference": "ffcf5673ea6a2270ad705f7a7ad77161601edc07"
+                "reference": "fbee66f7763999094ccfbe1828ad121f14623876"
             },
             "require": {
-                "typo3/flow": "2.2.*"
+                "typo3/flow": "*"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1855,7 +1849,7 @@
                 "LGPL-3.0+"
             ],
             "description": "A simple generator for controller and views.",
-            "time": "2014-06-18 10:15:35"
+            "time": "2014-08-21 16:45:22"
         }
     ],
     "aliases": [
@@ -1863,7 +1857,10 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "doctrine/migrations": 20
+        "typo3/flow": 20,
+        "doctrine/migrations": 20,
+        "typo3/kickstart": 20,
+        "typo3/buildessentials": 20
     },
     "prefer-stable": true,
     "platform": [

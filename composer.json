@@ -12,13 +12,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "typo3/flow": "2.2.*",
+        "typo3/flow": "dev-master",
         "mw/metamorph": "*",
         "doctrine/migrations": "@dev"
     },
     "require-dev": {
-        "typo3/kickstart": "2.2.*",
-        "typo3/buildessentials": "2.2.*",
+        "typo3/kickstart": "dev-master",
+        "typo3/buildessentials": "dev-master",
         "phpunit/phpunit": "4.2.*",
         "mikey179/vfsstream": "1.2.*"
     },
