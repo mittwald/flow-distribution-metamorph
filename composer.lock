@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "644fcb5937a2ea6dbf8a9e6c1163abdb",
+    "hash": "80b255d9138c2bbc8351246f8fee349a",
     "packages": [
         {
             "name": "composer/installers",
@@ -686,14 +686,67 @@
             "time": "2014-06-03 19:53:45"
         },
         {
-            "name": "mw/metamorph",
-            "version": "dev-master",
+            "name": "gitonomy/gitlib",
+            "version": "v0.1.7",
             "source": {
                 "type": "git",
-                "url": "ssh://gitlab.mittwaldserver.info/mhelmich/flow-package-metamorph.git",
-                "reference": "84466bc0a1dbe41db66d3f99d5b775464e59c855"
+                "url": "https://github.com/gitonomy/gitlib.git",
+                "reference": "7a46107cfb8552b312101e0d5906e95d54d7ddc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gitonomy/gitlib/zipball/7a46107cfb8552b312101e0d5906e95d54d7ddc6",
+                "reference": "7a46107cfb8552b312101e0d5906e95d54d7ddc6",
+                "shasum": ""
             },
             "require": {
+                "symfony/process": "~2.4"
+            },
+            "require-dev": {
+                "psr/log": "~1"
+            },
+            "suggest": {
+                "psr/log": "Add some log"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Gitonomy\\Git": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Salomé",
+                    "email": "alexandre.salome@gmail.com",
+                    "homepage": "http://alexandre-salome.fr"
+                },
+                {
+                    "name": "Julien DIDIER",
+                    "email": "genzo.wm@gmail.com",
+                    "homepage": "http://www.jdidier.net"
+                }
+            ],
+            "description": "Library for accessing git",
+            "homepage": "http://gitonomy.com",
+            "time": "2014-07-13 19:02:31"
+        },
+        {
+            "name": "mw/metamorph",
+            "version": "dev-scm-synchronization",
+            "source": {
+                "type": "git",
+                "url": "ssh://github.com/martin-helmich/flow-metamorph.git",
+                "reference": "9c56dec240b3cca0dd5a568b540034074a983f84"
+            },
+            "require": {
+                "gitonomy/gitlib": "*",
                 "nikic/php-parser": "dev-master",
                 "symfony/console": "*",
                 "typo3/flow": "*"
@@ -705,7 +758,7 @@
                 }
             },
             "description": "Add description here",
-            "time": "2014-09-27 12:57:00"
+            "time": "2014-09-28 12:54:03"
         },
         {
             "name": "nikic/php-parser",
@@ -713,12 +766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "2b96ab8edccd5a0d0e7a826a7dc53c421ae64f94"
+                "reference": "16dff7c2e67a425540b03e82f7f36105e121ad07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2b96ab8edccd5a0d0e7a826a7dc53c421ae64f94",
-                "reference": "2b96ab8edccd5a0d0e7a826a7dc53c421ae64f94",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/16dff7c2e67a425540b03e82f7f36105e121ad07",
+                "reference": "16dff7c2e67a425540b03e82f7f36105e121ad07",
                 "shasum": ""
             },
             "require": {
@@ -750,7 +803,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-09-12 12:48:23"
+            "time": "2014-09-28 11:14:37"
         },
         {
             "name": "symfony/console",
@@ -861,6 +914,53 @@
             "time": "2014-08-26 14:16:33"
         },
         {
+            "name": "symfony/process",
+            "version": "v2.5.4",
+            "target-dir": "Symfony/Component/Process",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Process.git",
+                "reference": "136cf0bdaacea81f779583376d47dd8aef4fc6ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/136cf0bdaacea81f779583376d47dd8aef4fc6ba",
+                "reference": "136cf0bdaacea81f779583376d47dd8aef4fc6ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Process\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-31 03:22:04"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v2.5.4",
             "target-dir": "Symfony/Component/Yaml",
@@ -929,11 +1029,11 @@
         },
         {
             "name": "typo3/flow",
-            "version": "dev-master",
+            "version": "dev-bugfixes-all",
             "source": {
                 "type": "git",
-                "url": "git://git.typo3.org/Packages/TYPO3.Flow.git",
-                "reference": "f8121dde9b7cbda4975695ef7093cc01ce0cdafb"
+                "url": "ssh://github.com/martin-helmich/flow-bugfixes.git",
+                "reference": "09981cd3c0b99053b37be75577c82ff381af4772"
             },
             "require": {
                 "composer/installers": "~1.0.2",
@@ -960,13 +1060,12 @@
                     "TYPO3\\Flow": "Classes"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
             "description": "TYPO3 Flow Application Framework",
             "homepage": "http://flow.typo3.org",
-            "time": "2014-09-18 10:27:12"
+            "time": "2014-09-28 15:51:46"
         },
         {
             "name": "typo3/fluid",
@@ -1604,25 +1703,28 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "1e091702a5a38e6b4c1ba9ca816e3dd343df2e2d"
+                "reference": "5843509fed39dee4b356a306401e9dd1a931fec7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/1e091702a5a38e6b4c1ba9ca816e3dd343df2e2d",
-                "reference": "1e091702a5a38e6b4c1ba9ca816e3dd343df2e2d",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/5843509fed39dee4b356a306401e9dd1a931fec7",
+                "reference": "5843509fed39dee4b356a306401e9dd1a931fec7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.2"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1636,13 +1738,12 @@
             ],
             "authors": [
                 {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                },
-                {
                     "name": "Kore Nordmann",
                     "email": "mail@kore-nordmann.de"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Diff implementation",
@@ -1650,7 +1751,7 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2013-08-03 16:46:33"
+            "time": "2014-08-15 10:29:00"
         },
         {
             "name": "sebastian/environment",
@@ -1858,6 +1959,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "typo3/flow": 20,
+        "mw/metamorph": 20,
         "doctrine/migrations": 20,
         "typo3/kickstart": 20,
         "typo3/buildessentials": 20
