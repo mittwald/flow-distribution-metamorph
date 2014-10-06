@@ -1,20 +1,20 @@
 {
-    "name": "mw/distribution-metamorph",
+    "name": "mittwald-typo3/distribution-metamorph",
     "description": "Metamorph Distribution",
-    "license": "AGPL",
+    "license": "MIT",
     "config": {
         "vendor-dir": "Packages/Libraries",
-        "bin-dir": "bin"
+        "bin-dir": "bin",
+        "preferred-install": "source"
     },
     "repositories": [
-        { "type": "vcs", "url": "ssh://github.com/martin-helmich/flow-metamorph.git" },
-        { "type": "vcs", "url": "ssh://github.com/martin-helmich/flow-bugfixes.git" }
+        { "type": "vcs", "url": "git://github.com/martin-helmich/flow-bugfixes.git" }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "typo3/flow": "dev-bugfixes-all",
-        "mw/metamorph": "dev-scm-synchronization",
+        "mittwald-typo3/flow-metamorph": "dev-master",
         "doctrine/migrations": "@dev"
     },
     "require-dev": {
