@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "45584e68198d70d5571d70ce42a1a7b0",
+    "hash": "7771c4903acee48af2d87d3379171d66",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.18",
+            "version": "v1.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067"
+                "reference": "89d77bfbee79e16653f7162c86e602cc188471db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
-                "reference": "74fb0a7a1a23696d9c8cc2fba5903f6711cdd067",
+                "url": "https://api.github.com/repos/composer/installers/zipball/89d77bfbee79e16653f7162c86e602cc188471db",
+                "reference": "89d77bfbee79e16653f7162c86e602cc188471db",
                 "shasum": ""
             },
             "replace": {
@@ -59,6 +59,7 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "Thelia",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
@@ -68,9 +69,11 @@
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
+                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -94,7 +97,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-08-18 20:00:12"
+            "time": "2014-11-29 01:29:17"
         },
         {
             "name": "doctrine/annotations",
@@ -562,12 +565,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021"
+                "reference": "f4fe9d9cc21a711d89d91d29c4a4e7945289cdd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021",
-                "reference": "1a9dffa64e33fdc10f4b4c3f5d7230b74d4a1021",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/f4fe9d9cc21a711d89d91d29c4a4e7945289cdd0",
+                "reference": "f4fe9d9cc21a711d89d91d29c4a4e7945289cdd0",
                 "shasum": ""
             },
             "require": {
@@ -612,7 +615,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2014-08-18 18:03:07"
+            "time": "2014-10-30 14:49:25"
         },
         {
             "name": "doctrine/orm",
@@ -739,16 +742,16 @@
         },
         {
             "name": "helmich/flow-eventbroker",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/martin-helmich/flow-eventbroker.git",
-                "reference": "d8ccaeacdb9dccb0456a5e08593f92afd3961d19"
+                "reference": "a08dc966cfddbee4f8ea75d1c682320ac196352d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/martin-helmich/flow-eventbroker/zipball/d8ccaeacdb9dccb0456a5e08593f92afd3961d19",
-                "reference": "d8ccaeacdb9dccb0456a5e08593f92afd3961d19",
+                "url": "https://api.github.com/repos/martin-helmich/flow-eventbroker/zipball/a08dc966cfddbee4f8ea75d1c682320ac196352d",
+                "reference": "a08dc966cfddbee4f8ea75d1c682320ac196352d",
                 "shasum": ""
             },
             "require": {
@@ -773,7 +776,76 @@
                 }
             ],
             "description": "TYPO3 Flow package containing an event dispatching mechanism",
-            "time": "2014-09-28 18:41:25"
+            "time": "2014-09-30 22:20:34"
+        },
+        {
+            "name": "helmich/php-evaluator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martin-helmich/php-evaluator.git",
+                "reference": "2c38ce205486e7244d645df434d072976b3aa2d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/martin-helmich/php-evaluator/zipball/2c38ce205486e7244d645df434d072976b3aa2d4",
+                "reference": "2c38ce205486e7244d645df434d072976b3aa2d4",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Helmich\\PhpEvaluator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Helmich",
+                    "email": "m.helmich@mittwald.de"
+                }
+            ],
+            "description": "Evaluate an AST generated by PHPParser",
+            "time": "2014-12-02 15:10:25"
+        },
+        {
+            "name": "helmich/php-scalarclasses",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/martin-helmich/php-scalarclasses.git",
+                "reference": "7d548aaa88e32166768b74efb2ae2c9598876bf5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/martin-helmich/php-scalarclasses/zipball/7d548aaa88e32166768b74efb2ae2c9598876bf5",
+                "reference": "7d548aaa88e32166768b74efb2ae2c9598876bf5",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Helmich\\Scalars\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Helmich",
+                    "email": "m.helmich@mittwald.de"
+                }
+            ],
+            "description": "Wrap primitive data types with an object-oriented interface",
+            "time": "2014-12-02 15:11:07"
         },
         {
             "name": "mittwald-typo3/flow-metamorph",
@@ -781,18 +853,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mittwald/flow-metamorph.git",
-                "reference": "343eb0fb717f78b7fe9b2ee752eb2ef33eff769d"
+                "reference": "422382bd251045998debc72f622638ac214a0e42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mittwald/flow-metamorph/zipball/343eb0fb717f78b7fe9b2ee752eb2ef33eff769d",
-                "reference": "343eb0fb717f78b7fe9b2ee752eb2ef33eff769d",
+                "url": "https://api.github.com/repos/mittwald/flow-metamorph/zipball/422382bd251045998debc72f622638ac214a0e42",
+                "reference": "422382bd251045998debc72f622638ac214a0e42",
                 "shasum": ""
             },
             "require": {
                 "ext-xsl": "*",
                 "gitonomy/gitlib": "*",
                 "helmich/flow-eventbroker": "*",
+                "helmich/php-evaluator": "dev-master",
+                "helmich/php-scalarclasses": "dev-master",
+                "mittwald-typo3/flow-t3compat": "*",
                 "nikic/php-parser": "dev-master",
                 "symfony/console": ">= 2.5",
                 "typo3/flow": "*"
@@ -808,7 +883,41 @@
                 "MIT"
             ],
             "description": "Convert TYPO3 CMS extensions to TYPO3 Flow packages",
-            "time": "2014-10-06 17:06:11"
+            "time": "2014-12-02 15:08:27"
+        },
+        {
+            "name": "mittwald-typo3/flow-t3compat",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mittwald/flow-t3compat.git",
+                "reference": "4a9ba1ed7f66c89dcd3acda82c1006af851a8ee7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mittwald/flow-t3compat/zipball/4a9ba1ed7f66c89dcd3acda82c1006af851a8ee7",
+                "reference": "4a9ba1ed7f66c89dcd3acda82c1006af851a8ee7",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/flow": "*",
+                "typo3/party": "*"
+            },
+            "require-dev": {
+                "phing/phing": "*"
+            },
+            "type": "typo3-flow-package",
+            "autoload": {
+                "psr-0": {
+                    "Mw\\T3Compat": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Compatibility classes for using TYPO3 CMS code in TYPO3 Flow",
+            "time": "2014-10-12 19:24:16"
         },
         {
             "name": "nikic/php-parser",
@@ -816,12 +925,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "f8678ad7e9c06fb82b26ae5d5cea14077fbce7fe"
+                "reference": "2438848487bc2564c2fe472c5bf6db54153ce6f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f8678ad7e9c06fb82b26ae5d5cea14077fbce7fe",
-                "reference": "f8678ad7e9c06fb82b26ae5d5cea14077fbce7fe",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2438848487bc2564c2fe472c5bf6db54153ce6f3",
+                "reference": "2438848487bc2564c2fe472c5bf6db54153ce6f3",
                 "shasum": ""
             },
             "require": {
@@ -853,21 +962,21 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-10-01 10:18:18"
+            "time": "2014-12-13 12:44:40"
         },
         {
             "name": "symfony/console",
-            "version": "v2.5.5",
+            "version": "v2.6.1",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "ca053eaa031c93afb68a71e4eb1f4168dfd4a661"
+                "reference": "ef825fd9f809d275926547c9e57cbf14968793e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/ca053eaa031c93afb68a71e4eb1f4168dfd4a661",
-                "reference": "ca053eaa031c93afb68a71e4eb1f4168dfd4a661",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef825fd9f809d275926547c9e57cbf14968793e8",
+                "reference": "ef825fd9f809d275926547c9e57cbf14968793e8",
                 "shasum": ""
             },
             "require": {
@@ -875,16 +984,18 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1"
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
-                "symfony/event-dispatcher": ""
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -908,21 +1019,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-25 09:53:56"
+            "time": "2014-12-02 20:19:20"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v2.5.5",
+            "version": "v2.5.8",
             "target-dir": "Symfony/Component/DomCrawler",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "a2804ec76442a9d0a3bb25f99a7830ba24743e07"
+                "reference": "afbdb416ca0096d2d6be13c6fe42d20b52656076"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/a2804ec76442a9d0a3bb25f99a7830ba24743e07",
-                "reference": "a2804ec76442a9d0a3bb25f99a7830ba24743e07",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/afbdb416ca0096d2d6be13c6fe42d20b52656076",
+                "reference": "afbdb416ca0096d2d6be13c6fe42d20b52656076",
                 "shasum": ""
             },
             "require": {
@@ -961,21 +1072,21 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-22 09:14:18"
+            "time": "2014-12-02 20:15:53"
         },
         {
             "name": "symfony/process",
-            "version": "v2.5.5",
+            "version": "v2.6.1",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b"
+                "reference": "bf0c9bd625f13b0b0bbe39919225cf145dfb935a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
-                "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/bf0c9bd625f13b0b0bbe39919225cf145dfb935a",
+                "reference": "bf0c9bd625f13b0b0bbe39919225cf145dfb935a",
                 "shasum": ""
             },
             "require": {
@@ -984,7 +1095,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1008,21 +1119,21 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-23 05:25:11"
+            "time": "2014-12-02 20:19:20"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.5.5",
+            "version": "v2.5.8",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96"
+                "reference": "b6ad726d415aa787ac4deddc75e7ad7a1bcc84bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b1dbc53593b98c2d694ebf383660ac9134d30b96",
-                "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b6ad726d415aa787ac4deddc75e7ad7a1bcc84bd",
+                "reference": "b6ad726d415aa787ac4deddc75e7ad7a1bcc84bd",
                 "shasum": ""
             },
             "require": {
@@ -1055,35 +1166,39 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-22 09:14:18"
+            "time": "2014-12-02 20:15:53"
         },
         {
             "name": "typo3/eel",
-            "version": "1.0.0-alpha5",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Eel.git",
-                "reference": "25710c956524fc6d7f28d5748973100960980ab9"
+                "reference": "dc6a2ce3f7405eff69f6bf0c10a2122412117df9"
             },
             "require": {
-                "typo3/flow": "*"
+                "typo3/flow": "2.3.*"
             },
-            "type": "typo3-flow-package",
+            "type": "typo3-flow-framework",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Eel": "Classes"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2013-08-06 14:53:48"
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "description": "The Embedded Expression Language (Eel) is a building block for creating Domain Specific Languages",
+            "time": "2014-12-10 23:22:30"
         },
         {
             "name": "typo3/flow",
-            "version": "dev-bugfixes-all",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
-                "url": "ssh://github.com/martin-helmich/flow-bugfixes.git",
-                "reference": "09981cd3c0b99053b37be75577c82ff381af4772"
+                "url": "git://git.typo3.org/Packages/TYPO3.Flow.git",
+                "reference": "6f49f40fd1ebd8d8b404e80f3260a570b71651c8"
             },
             "require": {
                 "composer/installers": "~1.0.2",
@@ -1097,9 +1212,9 @@
                 "symfony/console": "2.*",
                 "symfony/dom-crawler": "2.5.*",
                 "symfony/yaml": "2.5.*",
-                "typo3/eel": "*",
-                "typo3/fluid": "*",
-                "typo3/party": "*"
+                "typo3/eel": "2.3.*",
+                "typo3/fluid": "2.3.*",
+                "typo3/party": "2.3.*"
             },
             "suggest": {
                 "doctrine/data-fixtures": "To manage and execute the loading of data fixtures for the Doctrine ORM or ODM"
@@ -1110,23 +1225,24 @@
                     "TYPO3\\Flow": "Classes"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
             "description": "TYPO3 Flow Application Framework",
             "homepage": "http://flow.typo3.org",
-            "time": "2014-09-28 15:51:46"
+            "time": "2014-12-10 23:22:29"
         },
         {
             "name": "typo3/fluid",
-            "version": "dev-master",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Fluid.git",
-                "reference": "5aed6237afd5f60f2989c6bd905ed937ebcd3366"
+                "reference": "51440ca680bcf8f33917e781f2b187bca1d572cd"
             },
             "require": {
-                "typo3/flow": "*"
+                "typo3/flow": "2.3.*"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1139,18 +1255,18 @@
                 "LGPL-3.0+"
             ],
             "description": "Next-Generation Templating Framework for TYPO3 Flow and TYPO3 Neos, also backported to TYPO3 CMS",
-            "time": "2014-09-14 16:33:32"
+            "time": "2014-12-10 23:22:30"
         },
         {
             "name": "typo3/party",
-            "version": "dev-master",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Party.git",
-                "reference": "9cd749deaa0bc6e2bc18a210bb269dd633522327"
+                "reference": "1122529ef79e1d0677630f932dda4181ad498f5c"
             },
             "require": {
-                "typo3/flow": "*"
+                "typo3/flow": "2.3.*"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1163,26 +1279,26 @@
                 "LGPL-3.0+"
             ],
             "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard.",
-            "time": "2014-03-27 00:29:08"
+            "time": "2014-12-10 23:22:30"
         }
     ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8806c41c178ad4a2e87294b851d730779555d252"
+                "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8806c41c178ad4a2e87294b851d730779555d252",
-                "reference": "8806c41c178ad4a2e87294b851d730779555d252",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f976e5de371104877ebc89bd8fecb0019ed9c119",
+                "reference": "f976e5de371104877ebc89bd8fecb0019ed9c119",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.3"
+                "php": ">=5.3,<8.0-DEV"
             },
             "require-dev": {
                 "athletic/athletic": "~0.1.8",
@@ -1219,7 +1335,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2014-10-04 22:48:25"
+            "time": "2014-10-13 12:58:55"
         },
         {
             "name": "mikey179/vfsStream",
@@ -1253,16 +1369,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.11",
+            "version": "2.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "53603b3c995f5aab6b59c8e08c3a663d2cc810b7"
+                "reference": "0e7d2eec5554f869fa7a4ec2d21e4b37af943ea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/53603b3c995f5aab6b59c8e08c3a663d2cc810b7",
-                "reference": "53603b3c995f5aab6b59c8e08c3a663d2cc810b7",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/0e7d2eec5554f869fa7a4ec2d21e4b37af943ea5",
+                "reference": "0e7d2eec5554f869fa7a4ec2d21e4b37af943ea5",
                 "shasum": ""
             },
             "require": {
@@ -1314,7 +1430,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-08-31 06:33:04"
+            "time": "2014-12-03 06:41:44"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1629,16 +1745,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "e54a01c0da1b87db3c5a3c4c5277ddf331da4aef"
+                "reference": "c484a80f97573ab934e37826dba0135a3301b26a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/e54a01c0da1b87db3c5a3c4c5277ddf331da4aef",
-                "reference": "e54a01c0da1b87db3c5a3c4c5277ddf331da4aef",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/c484a80f97573ab934e37826dba0135a3301b26a",
+                "reference": "c484a80f97573ab934e37826dba0135a3301b26a",
                 "shasum": ""
             },
             "require": {
@@ -1652,7 +1768,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1689,7 +1805,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2014-05-11 23:00:21"
+            "time": "2014-11-16 21:32:38"
         },
         {
             "name": "sebastian/diff",
@@ -1745,28 +1861,28 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.0.1",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "10c7467da0622f7848cc5cadc0828c3359254df4"
+                "reference": "6e6c71d918088c251b181ba8b3088af4ac336dd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/10c7467da0622f7848cc5cadc0828c3359254df4",
-                "reference": "10c7467da0622f7848cc5cadc0828c3359254df4",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6e6c71d918088c251b181ba8b3088af4ac336dd7",
+                "reference": "6e6c71d918088c251b181ba8b3088af4ac336dd7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -1791,7 +1907,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2014-05-04 17:56:05"
+            "time": "2014-10-25 08:00:45"
         },
         {
             "name": "sebastian/exporter",
@@ -1899,7 +2015,7 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Flow/BuildEssentials.git",
-                "reference": "1b1b8df690260a364f449ef998b4b27405e2ff2e"
+                "reference": "0b0b8716557d1b815dc68f91e3fd0b195b5611d4"
             },
             "require": {
                 "composer/installers": "~1.0.2"
@@ -1913,7 +2029,7 @@
                 "LGPL-3.0+"
             ],
             "description": "TYPO3 Flow Build Toolchain Essentials",
-            "time": "2014-03-25 15:51:53"
+            "time": "2014-12-01 12:30:17"
         },
         {
             "name": "typo3/kickstart",
@@ -1940,22 +2056,15 @@
             "time": "2014-08-21 16:45:22"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "typo3/flow": 20,
         "mittwald-typo3/flow-metamorph": 20,
         "doctrine/migrations": 20,
         "typo3/kickstart": 20,
         "typo3/buildessentials": 20
     },
     "prefer-stable": true,
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "platform": [],
+    "platform-dev": []
 }
