@@ -7,13 +7,10 @@
         "bin-dir": "bin",
         "preferred-install": "source"
     },
-    "repositories": [
-        { "type": "vcs", "url": "git://github.com/martin-helmich/flow-bugfixes.git" }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "typo3/flow": "dev-bugfixes-all",
+        "typo3/flow": "~2.3.0",
         "mittwald-typo3/flow-metamorph": "dev-master",
         "doctrine/migrations": "@dev"
     },
